@@ -3,36 +3,45 @@ int main()
 {
 
     int id,pincode,age;
-    char name[20],address[40],district[30],email[30];
+    char name[20];
+    char address[50];
+    char district[50];
+    char email[30];
 
     printf("enter your name: ");
-    scanf("%s",&name);
-    printf("enter your age: ");
+    scanf(" %[^\n]",name);
+
+    printf("\nenter your age: ");
     scanf("%d",&age);
-    printf("enter your id: ");
-    scanf("%d",&id);
-    printf("enter your address: ");
-    scanf("%s",&address);
-    printf("enter your pincode: ");
-    scanf("%d",&pincode);
-    prinf("enter your district");
-    scanf("%s",&district);
-    printf("enter your email address");
-    scanf("%s",&email);
+
+    printf("\nenter your id: ");
+    scanf(" %d",&id);
+
+    printf("\nenter your address: ");
+    scanf(" %[^\n]",address);
+
+    printf("\nenter your pincode: ");
+    scanf(" %d",&pincode);
+    
+    printf("\nenter your district: ");
+    scanf(" %[^\n]",district);
+
+    printf("\nenter your e-mail address: ");
+    scanf(" %[^\n]",email);
 
 
-    printf("******* STUDENT DETAILS *******");
+    printf("\n******* STUDENT DETAILS *******");
 
-    printf("Student Name: ",name);
-    printf("Student Age: ",age);
-    printf("Student ID: ",id);
-    printf("Student Address:",address);
-    printf("");
-    printf(""); 
-    printf("");
-    printf("");
+    printf("\nStudent Name: %s",name);
+    printf("\nStudent Age: %d",age);
+    printf("\nStudent ID: %d",id);
+    printf("\nStudent Address: %s",address);
+    printf("\nStudent Pincode %d",pincode);
+    printf("\nStudent District: %s",district); 
+    printf("\nStudent E-mail: %s",email);
+    
             
 
 
-
+  return 0;
 }
