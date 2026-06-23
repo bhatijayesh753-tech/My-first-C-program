@@ -1,1 +1,3 @@
-k=1;
+   // multiply();
+    // division();
+    // sub();
