@@ -247,6 +247,6 @@ int main()
     
     }
 
-}      // cancellation ko fix krna ha
+}      
     
 
